@@ -120,53 +120,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("rsvp-form");
-  const button = document.getElementById("rsvp-button");
-
-  // safety check
-  if (!form || !button) return;
-
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-
-    button.textContent = "Submitting...";
-    button.disabled = true;
-
-    try {
-      const formData = new FormData(form);
-
-      const response = await fetch(form.action, {
-        method: "POST",
-        body: new URLSearchParams(formData),
-      });
-
-      if (!response.ok) {
-        throw new Error("Network response was not ok");
-      }
-
-      const result = await response.json();
-
-      if (result.status === "success") {
-        button.textContent = "RSVP submitted!";
-        form.reset();
-
-        setTimeout(() => {
-          button.textContent = "Send RSVP";
-          button.disabled = false;
-        }, 5000);
-      } else {
-        throw new Error(result.message || "Submission failed");
-      }
-    } catch (err) {
-      alert("Failed to submit RSVP. Please try again.");
-      console.error(err);
-      button.textContent = "Send RSVP";
-      button.disabled = false;
-    }
-  });
-});
-
-document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("food-form");
   const button = document.getElementById("food-button");
 
