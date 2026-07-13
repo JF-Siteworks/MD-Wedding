@@ -156,6 +156,58 @@
       </div>
     </section>
 
+    <section id="rsvp">
+      <h2 class="form-heading">RSVP</h2>
+      <form
+        id="rsvp-form"
+        action="https://script.google.com/macros/s/AKfycbzxahnfT02o-HO2f14xXVNBtOe8LxKC6xO054tx3vWSEL-FymmKbqxRSOoHUy2M3FmA/exec"
+        method="POST"
+      >
+        <label for="name"
+          >Full Name <br />
+          (Please register each person individually)</label
+        >
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your full name"
+          required
+        />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your Email Address"
+          required
+        />
+
+        <fieldset>
+          <legend>Will you be attending?</legend>
+          <label>
+            <input type="radio" name="rsvpStatus" value="Yes" required />
+            Yes
+          </label>
+          <label>
+            <input type="radio" name="rsvpStatus" value="No" required />
+            No
+          </label>
+        </fieldset>
+
+        <label for="dietary">Dietary</label>
+        <input
+          type="text"
+          id="dietary"
+          name="dietary"
+          placeholder="Any Dietary Needs"
+        />
+
+        <button type="submit" id="rsvp-button">Send RSVP</button>
+      </form>
+    </section>
+
     <section id="food" class="form-card">
       <h2 class="form-heading">Menu Selection</h2>
 
@@ -230,7 +282,7 @@
     </section>
 
     <footer>
-      <p>© 2025 Michelle & Derek. All rights reserved.</p>
+      <p>© 2026 Michelle & Derek. All rights reserved.</p>
       <p>Designed by JF Siteworks</p>
     </footer>
 
