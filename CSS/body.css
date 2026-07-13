@@ -1,0 +1,58 @@
+:root {
+  --sage: #5F6C4A;
+  --sage-dark: #8c9b76;
+  --ivory: #f6f5f2;
+  --off-white: #fffdf7;
+  --text: #2e2e2e;
+  --border: #dcdcdc;
+  --highlight: #d8a7b1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background-color: var(--ivory);
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  text-align: center;
+  overflow-x:hidden;
+  overflow-y: visible;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  background: var(--sage-dark);
+  color: var(--ivory);
+  text-align: center;
+  padding: 1rem 0;
+  font-family: "Tangerine", cursive;
+  font-size: 1.75rem;
+  letter-spacing: 0.05em;
+}
+
+footer a {
+  color: var(--ivory);
+  text-decoration: underline;
+}
+
+.samsung {
+  display: none;
+}
+
+@media (max-width: 385px) {
+  .samsung {
+    display: inline;
+  }
+}

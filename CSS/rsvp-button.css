@@ -1,0 +1,110 @@
+.button {
+  width: 160px;
+  height: 38.4px;
+  position: fixed;
+  display: flex;
+  text-decoration: none;
+  background-color: var(--ivory);
+  color: var(--ivory);
+  border-radius: 999px;
+  border: 3px solid var(--ivory);
+  top: 88%;
+  left: 86%;
+  z-index: 999;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease,
+    transform 0.3s ease;
+}
+
+.button span {
+  position: absolute;
+  top: 16px;
+  transform: translate(-50%, -50%);
+  color: var(--sage-dark);
+  font-size: 1.2rem;
+  font-family: "Tangerine", cursive;
+  left: 20px;
+  transition: color 0.3s ease;
+}
+
+.button-text {
+  width: 120px;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: var(--sage-dark);
+  z-index: 1000;
+  border-radius: 9999px;
+  left: 35.6px;
+  align-items: center;
+  color: var(--ivory);
+  font-family: "Tangerine", cursive;
+  font-size: 1.2rem;
+  border: 3px solid var(--sage-dark);
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease,
+    transform 0.3s ease;
+  .button:hover {
+    transform: scale(1.05);
+  }
+}
+
+.button:hover {
+  transform: scale(1.2);
+}
+
+.button:hover .button-text {
+  background-color: var(--sage);
+  color: var(--ivory);
+  border: 3px solid var(--sage);
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+.button.scrolled {
+  background-color: var(--sage-dark);
+  border-color: var(--sage-dark);
+  transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease,
+    transform 0.3s ease;
+}
+
+.button-text.scrolled {
+  background-color: var(--ivory);
+  color: var(--sage-dark);
+  border-color: var(--ivory);
+  transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease,
+    transform 0.3s ease;
+}
+
+.button span.scrolled {
+  color: var(--ivory);
+  transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease,
+    transform 0.3s ease;
+}
+
+.button:hover.scrolled {
+  background-color: var(--sage);
+  color: var(--ivory);
+  border-color: var(--sage);
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover.scrolled .button-text {
+  background-color: var(--ivory);
+  color: var(--sage-dark);
+  border: 3px solid var(--ivory);
+}
+
+.button:hover span {
+    color: var(--sage);
+}
+
+.button:hover.scrolled span {
+    color: var(--ivory);
+}
+
+.button:hover.scrolled p {
+    color: var(--sage-dark);
+}
+
+.button {
+  display: none;
+}

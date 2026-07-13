@@ -1,0 +1,50 @@
+.letter-section {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 1rem;
+  background: var(--ivory);
+}
+
+.letter-card {
+  background: white;
+  border: 2px solid var(--sage-dark);
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 650px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.letter-title {
+  font-family: "Tangerine", cursive;
+  font-size: 3rem;
+  color: var(--sage-dark);
+  margin-bottom: 1rem;
+}
+
+.letter-text {
+  font-size: 1rem;
+  color: var(--text);
+  margin-bottom: 2rem;
+  font-family: "Inter", sans-serif;
+}
+
+.letter-details p {
+  font-size: 1rem;
+  margin: 0.3rem 0;
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+}
+
+.letter-details strong {
+  color: var(--sage-dark);
+  font-family: "Tangerine", cursive;
+  font-size: 1.5rem;
+}
+
+.letter-closing {
+  font-family: "Tangerine", cursive;
+  font-size: 2rem;
+  margin-top: 2rem;
+  color: var(--sage-dark);
+}

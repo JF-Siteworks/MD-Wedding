@@ -1,0 +1,96 @@
+/* reuse RSVP card styling */
+#food.form-card {
+  max-width: 420px;
+  width: 100%;
+  background: white;
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(163, 177, 138, 0.2);
+  margin: 4rem auto;
+  border: 2px solid var(--sage-dark);
+}
+
+/* headings already match */
+#food .form-heading {
+  font-family: "Tangerine", cursive;
+  font-size: 4.2rem;
+  color: var(--sage-dark);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* labels identical */
+#food form label {
+  display: block;
+  font-weight: 600;
+  color: var(--sage-dark);
+  margin-bottom: 0.3rem;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+/* inputs + selects + textarea identical */
+#food input,
+#food select,
+#food textarea {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1.6rem;
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  transition: border-color 0.3s ease;
+  max-width: 100%;
+}
+
+#food textarea {
+  resize: none;
+}
+
+#food input:focus,
+#food select:focus,
+#food textarea:focus {
+  outline: none;
+  border-color: var(--sage-dark);
+}
+
+/* dropdown polish */
+#food select {
+  background-color: white;
+  cursor: pointer;
+}
+
+/* submit button identical */
+#food button[type="submit"] {
+  width: 100%;
+  background-color: var(--sage-dark);
+  border: none;
+  border-radius: 14px;
+  color: white;
+  font-weight: 700;
+  font-size: 1.75rem;
+  padding: 1rem 0;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+  font-family: "Tangerine", cursive;
+}
+
+#food button[type="submit"]:hover {
+  background-color: #5f6c4a;
+  transform: scale(1.1);
+}
+
+/* mobile parity */
+@media (max-width: 768px) {
+  #food.form-card {
+    width: 95vw;
+  }
+
+  #food button[type="submit"]:hover {
+    background-color: var(--sage-dark);
+    transform: none;
+  }
+}
